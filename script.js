@@ -4,7 +4,7 @@ let topbtn = document.querySelector("#topbtn");
 
 
 window.onscroll = () =>{
-if(window.scrollY >= 50){
+if(window.scrollY >= 100){
     heading.classList.add("active");
     logo.style.color = "black";
     topbtn.style.display = "flex";
