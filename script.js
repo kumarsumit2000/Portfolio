@@ -20,3 +20,18 @@ else{
 let year = document.querySelector("#year");
 let d = new Date();
 year.innerText = d.getFullYear();
+
+
+
+// mobile menu 
+let menu = document.querySelector("#menu");
+let mobileMenu = document.querySelector("#mobileMenu").addEventListener("click",() =>{
+    if(menu.style.display == "block"){
+    menu.style.display = "none"
+    }
+    else{
+        menu.style.display = "block"
+    }
+})
+
+// mobile menu 

@@ -335,12 +335,12 @@
     width: 100%;
     display: flex;
     margin-top: 50px;
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding: 100px 0px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: black;
+    background: black;
+
 }
 
 .skill_heading {
@@ -359,7 +359,7 @@
 
 .skill_heading h2 {
     font-size: 3rem;
-    color: black;
+    color: white;
     font-weight: bold;
     word-break: 10px;
 }
@@ -374,43 +374,52 @@
     content: " ";
     width: 40px;
     height: 5px;
-    background: black;
+    background: red;
 }
 
 .my_skills {
-    width: 100%;
+    width: 80%;
     padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.skill_list {
+    width: 300px;
+    height: 350px;
+    color: black;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.skill_list {
-    width: 80%;
-    background: black;
-    padding: 50px 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-
-}
-
-.skill_list .p_my_skill {
-    width: 70%;
-    height: 20px;
-    content: "";
-    border-radius: 8px;
     background: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px #ffff;
+
+}
+.skill_list p{
+    font-size: 30px;
+}
+.skill_list .p_my_skill{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
-.skill_list .p_my_skill .s_my_skill {
-    width: 90%;
-    height: 20px;
-    content: "";
-    border-radius: 8px;
-    background: #dc2f02;
+.skill_list .p_my_skill img{
+    width: 100%;
+    height: 100%;
+ }
+.skill_list:hover{
+    box-shadow: 5px 5px 15px 5px #dc9988;
+   transition: 0.3s;
 }
 
 /* contact */
@@ -477,6 +486,10 @@
     justify-content: center;
     align-items: center;
 }
+.contact_details{
+    color: white;
+    text-transform: lowercase;
+}
 
 .contact_list .contact_list_items {
     margin: 10px 30px;
@@ -499,7 +512,14 @@
     color: white;
     margin-top: 50px;
 }
-
+#mobileMenu{
+    display: none;
+}
+#mobileMenu i{
+  font-size: 30px;
+  padding: 20px;
+  background: white;
+}
 
 @media only screen and (max-width: 768px) {
     #heading {
@@ -507,26 +527,27 @@
         display: flex;
         justify-content: space-between;
         background: white;
-        padding: 5px 10px;
+        padding: 0px 10px;
 
     }
 
     #logo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: black;
         padding: 5px 0px;
     }
-
+    #mobileMenu{
+        display: block;
+    }
     #heading #menu {
         flex-direction: column;
         position: absolute;
-        right: 20px;
         z-index: 9999;
         background: white;
-    }
-
-
-
+        right: 0;
+        margin-top: 200px;
+        display: none;
+        }
     #heading ul a {
         color: black;
         font-size: 1rem;
@@ -537,6 +558,7 @@
         background: red;
 
     }
+   
 
     /*heading end*/
     #home {
@@ -709,52 +731,34 @@
     }
 
     /* skills */
-    #skill {
-        margin-top: 0px;
-        padding-top: 10px;
-        padding-bottom: 30px;
+/* skills */
+#skill {
+    margin-top: 30px;
+    padding: 50px 0px;
+}
+.skill_heading h2 {
+    font-size: 2rem;
+   }
+
+.skill_heading p {
+    font-size: 1.5rem;
+   }
+.my_skills {
+    width: 100%;
+    padding-top: 50px;
     }
 
-    .skill_heading h2 {
-        font-size: 1.5rem;
-    }
+.skill_list {
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px 2px #ffff;
 
-    .skill_heading p {
-        font-size: 1rem;
-    }
-
-    .skill_heading div span {
-        margin: 0 5px;
-        width: 20px;
-        height: 3px;
-    }
-
-    .my_skills {
-        padding-top: 20px;
-    }
-
-    .skill_list {
-        width: 90%;
-        padding: 10px 10px;
-    }
-
-    .skill_list h3 {
-        font-weight: normal;
-        font-size: 1rem;
-    }
-
-    .skill_list .p_my_skill {
-        width: 60%;
-        height: 10px;
-
-    }
-
-    .skill_list .p_my_skill .s_my_skill {
-        width: 90%;
-        height: 10px;
-
-    }
-
+}
+.skill_list p{
+    font-size: 20px;
+}
+    
     /* contact */
     .contact_heading h2 {
         font-size: 1.5rem;

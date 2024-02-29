@@ -5,29 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://kit.fontawesome.com/5321122a31.js" crossorigin="anonymous"></script>
     <title>Sumit Kumar</title>
 </head>
 
 <body>
-    <div id="heading" >
-        <div id="logo">Portfo<span style="color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">lio</span>
+    <div id="heading">
+        <div id="logo">Portfo<span
+                style="color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">lio</span>
         </div>
         <ul id="menu">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SKILL</a></li>
-            <li><a href="#">PROJECT</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">RESUME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#projects">PROJECT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
+        <div id="mobileMenu"><i class="fa-solid fa-bars"></i></div>
     </div>
-    <div id="topbtn"><a href="#home">^</a></div>
+    <div id="topbtn"><a href="#home"><i class="fa-solid fa-caret-up"></i></a></div>
     <div class="home" id="home">
         <div class="home-content">
             <div class="text-1">Hello 👋, My Name is</div>
             <div class="text-2">Sumit Kumar</div>
             <div class="text-3">And I'm a <span class="element">Frontend developer</span></div>
-            <div class="btn_2nd"><a href="#">Hire me</a></div>
+            <div class="btn_2nd"><a href="https://wa.me/+917042784535?text=Hi" target="_blank">Hire me</a></div>
         </div>
         <div id="img">
         </div>
@@ -35,100 +36,175 @@
     </div>
     <div class="about" id="about">
         <div class="about_heading">
-            <div class="about-1"><h2>ABOUT ME</h2></div>
-            <div class="about-2"><span></span><p>Who am I</p><span></span>
+            <div class="about-1">
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="about-2"><span></span>
+                <p>Who am I</p><span></span>
             </div>
             <div class="about-3">
                 <div id="about_img"><img src="myimg.jpeg" alt=""></div>
                 <div id="about_text">
-                    <div class="intro"><p>I am Sumit and I'm a</p>&nbsp;&nbsp;<p class="lement">Frontend developer</p></div>
-                    <div><p>I'm Self-taught React.js Developer. My goal is to build a fast, flexible, mobile-first website
-                        that clearly
-                        communicates with visitors. I have done BCA, I am a Youtuber having 90k+ Subscribers. I have
-                        experience
-                        in the industrial field as a service engineer and in the education field as Mathematics Teacher.
-                    </p></div>
+                    <div class="intro">
+                        <p>I am Sumit and I'm a</p>&nbsp;&nbsp;<p class="lement">Frontend developer</p>
+                    </div>
+                    <div>
+                        <p>I am Sumit Kumar and I am a self-taught front-end developer. My goal is to build a fast, flexible, mobile-first
+                            website that clearly communicates with visitors. I have done BCA from IGNOU, Delhi. I have
+                            experience in the industrial field as a Freelancer. I want to join a company where I can
+                            explore knowledge and
+                            Help the company achieve its goals.
+                        </p>
+                    </div>
                 </div>
             </div>
-    </div>
-<!-- skills -->
-<div id="skill">
-    <div class="skill_heading">
-        <div><h2>My Skills</h2></div>
-            <div><span></span><p>Skills</p><span></span></div>
-    </div>
-    <div class="my_skills">
-        <div class="skill_list"><h3>HTML</h3><div class="p_my_skill"><div class="s_my_skill"></div></div></div>
-        <div class="skill_list"><h3>CSS</h3><div class="p_my_skill"><div class="s_my_skill"></div></div></div>
-        <div class="skill_list"><h3>JS</h3><div class="p_my_skill"><div class="s_my_skill"></div></div></div>
-        <div class="skill_list"><h3>React JS</h3><div class="p_my_skill"><div class="s_my_skill"></div></div></div>
-        <div class="skill_list"><h3>Git & Git Hub</h3><div class="p_my_skill"><div class="s_my_skill"></div></div></div>
-
-    </div>
-</div>
-
-    <!-- projectss -->
-    <div id="projects">
-        <div class="project_heading">
-            <div><h2>PROJECTS</h2></div>
-            <div><span></span><p>My Projects</p><span></span></div>
         </div>
-        <div class="my_projects">
-            <div class="my_projects_list">
-                <div class="stone"><img src="stone.png" alt="loading.."></div>
-                <div><h3>Stone Paper Scassor</h3></div>
-                <div><a href="#">WATCH HERE..</a></div>
+        <!-- skills -->
+        <div id="skill">
+            <div class="skill_heading">
+                <div>
+                    <h2>MY SKILLS</h2>
+                </div>
+                <div><span></span>
+                    <p>Skills</p><span></span>
+                </div>
             </div>
-            <div class="my_projects_list">
-                <div class="paper"><img src="tic.png" alt="loading.."></div>
-                <div><h3>Tic-Tak-Toe</h3></div>
-                <div><a href="#">WATCH HERE..</a></div>
+            <div class="my_skills">
+                <div class="skill_list">
+                    <p>HTML</p>
+                    <div class="p_my_skill">
+                        <img src="html.png">
+                    </div>
+                </div>
+                <div class="skill_list">
+                    <p>CSS</p>
+                    <div class="p_my_skill">
+                        <img src="css.png">
+                    </div>
+                </div>
+                <div class="skill_list">
+                    <p>JS</p>
+                    <div class="p_my_skill">
+                        <img src="js.png">
+                    </div>
+                </div>
+                <div class="skill_list">
+                    <p>REACT JS</p>
+                    <div class="p_my_skill">
+                        <img src="react.png">
+                    </div>
+                </div>
+                <div class="skill_list">
+                    <p>BOOTSTRAP</p>
+                    <div class="p_my_skill">
+                        <img src="bt.jpg">
+                    </div>
+                </div>
+                <div class="skill_list">
+                    <p>TAILWIND CSS</p>
+                    <div class="p_my_skill">
+                        <img src="tailwind.jpg">
+                    </div>
+                </div>
+                <div class="skill_list">
+                    <p>Git & Git Hub</p>
+                    <div class="p_my_skill">
+                        <img src="github.png">
+                    </div>
+
+                </div>
+
 
             </div>
-            <div class="my_projects_list">
-                <div class="stone"><img src="stone.png" alt="loading.."></div>
-                <div><h3>Stone Paper Scassor</h3></div>
-                <div><a href="#">WATCH HERE..</a></div>
-            </div>
-            <div class="my_projects_list">
-                <div class="stone"><img src="stone.png" alt="loading.."></div>
-                <div><h3>Stone Paper Scassor</h3></div>
-                <div><a href="#">WATCH HERE..</a></div>
-            </div>
         </div>
-    </div>
-<!-- contact -->
-<div id="contact">
-    <div class="contact_heading">
-        <div><h2>Get In Touch</h2></div>
-            <div><span></span><p>Contact</p><span></span></div>
-    </div>
-    <div class="contact_list">
-        <div>
-            <div class="contact_list_items"><a href="https://wa.me/+917042784535?text=Hi"><img src="whatsapp.png" alt="loading.."></a></div>
-            <div class="contact_list_items"><a href="tel:+917042784535"><img src="call.png" alt="loading.."></a></div>
-            <div class="contact_list_items"><a href="mailto:kumarsumit2001mandal@gmail.com"><img src="mail.png" alt="loading.."></a></div>
-            <div class="contact_list_items"><a href="https://www.linkedin.com/in/sumit-kumar-b83653199/"><img src="linkedin.png" alt="loading.."></a></div>
-            <div class="contact_list_items"><a href="https://github.com/kumarsumit2000"><img src="github.png" alt="loading.."></div>
-        </div>
-        <div class="footer">Copyright &nbsp; &copy;&nbsp;<span id="year"></span>&nbsp; Sumit</div>
-    </div>
-    </div>
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('.element', {
-            strings: ['Web developer.', 'Freelancer.'],
-            typeSpeed: 200, loop: true,
-        });</script>
-           <script>
+        <!-- projectss -->
+        <div id="projects">
+            <div class="project_heading">
+                <div>
+                    <h2>PROJECTS</h2>
+                </div>
+                <div><span></span>
+                    <p>My Projects</p><span></span>
+                </div>
+            </div>
+            <div class="my_projects">
+                <div class="my_projects_list">
+                    <div class="stone"><img src="stone.png" alt="loading.."></div>
+                    <div>
+                        <h3>Stone Paper Scassor</h3>
+                    </div>
+                    <div><a href="#">WATCH HERE..</a></div>
+                </div>
+                <div class="my_projects_list">
+                    <div class="paper"><img src="tic.png" alt="loading.."></div>
+                    <div>
+                        <h3>Tic-Tak-Toe</h3>
+                    </div>
+                    <div><a href="#">WATCH HERE..</a></div>
+
+                </div>
+                <div class="my_projects_list">
+                    <div class="stone"><img src="stone.png" alt="loading.."></div>
+                    <div>
+                        <h3>Stone Paper Scassor</h3>
+                    </div>
+                    <div><a href="#">WATCH HERE..</a></div>
+                </div>
+                <div class="my_projects_list">
+                    <div class="stone"><img src="stone.png" alt="loading.."></div>
+                    <div>
+                        <h3>Stone Paper Scassor</h3>
+                    </div>
+                    <div><a href="#">WATCH HERE..</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+        <div id="contact">
+            <div class="contact_heading">
+                <div>
+                    <h2>Get In Touch</h2>
+                </div>
+                <div><span></span>
+                    <p>Contact</p><span></span>
+                </div>
+            </div>
+            <div class="contact_list">
+                <div class="contact_details"><span><i class="fa-solid fa-phone"></i>&nbsp;
+                        7042784535</span>                   
+                </div>
+                <div class="contact_details"> <span><i class="fa-solid fa-envelope"></i>&nbsp; kumarsumit2001mandal@gmail.com</span></div>
+                <div>
+                    <div class="contact_list_items"><a href="https://wa.me/+917042784535?text=Hi" target="_blank"><img
+                                src="whatsapp.png" alt="loading.."></a></div>
+                    <div class="contact_list_items"><a href="tel:+917042784535"><img src="call.png" alt="loading.."></a>
+                    </div>
+                    <div class="contact_list_items"><a href="mailto:kumarsumit2001mandal@gmail.com" target="_blank"><img
+                                src="mail.png" alt="loading.."></a></div>
+                    <div class="contact_list_items"><a href="https://www.linkedin.com/in/sumit-kumar-b83653199/"
+                            target="_blank"><img src="linkedin.png" alt="loading.."></a></div>
+                    <div class="contact_list_items"><a href="https://github.com/kumarsumit2000" target="_blank"><img
+                                src="github.png" alt="loading.."></div>
+                </div>
+                <div class="footer">Copyright &nbsp; &copy;&nbsp;<span id="year"></span>&nbsp; Sumit</div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('.element', {
+                strings: ['Web developer.', 'Freelancer.'],
+                typeSpeed: 200, loop: true,
+            });</script>
+        <script>
             var typed = new Typed('.lement', {
                 strings: ['Web developer.', 'Freelancer.'],
                 typeSpeed: 200, loop: true,
             });
-            
-            </script>
+
+        </script>
 </body>
 
 </html>
