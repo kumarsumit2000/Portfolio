@@ -28,11 +28,10 @@
 }
 
 #logo {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    padding: 5px 0px;
 }
 
 #heading ul {
@@ -43,7 +42,7 @@
 }
 
 #heading ul li {
-    padding: 10px 15px;
+    padding: 0px 15px;
     margin: 0px 10px;
     cursor: pointer;
 }
@@ -51,7 +50,7 @@
 #heading ul a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -94,7 +93,7 @@
 }
 
 .text-2 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: bold;
     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -137,7 +136,7 @@
 }
 
 .about-1 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
     font-weight: bold;
     word-break: 10px;
@@ -145,7 +144,7 @@
 
 .about-2 {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #dc2f02;
     font-weight: bold;
     display: flex;
@@ -156,7 +155,7 @@
 .about-2 span {
     content: " ";
     width: 40px;
-    height: 5px;
+    height: 3px;
     background: black;
 }
 
@@ -167,7 +166,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -177,10 +176,9 @@
 }
 
 .about-3 #about_img img {
-    max-height: 600px;
+    max-height: 300px;
     border-radius: 80px 30px 80px 30px;
     border: 1px #dc2f02 solid;
-    box-shadow: 10px 0px 5px #dc2f02;
     outline: none;
 
 }
@@ -200,7 +198,7 @@
 }
 
 #about_text .intro p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -215,9 +213,9 @@
 
 #about_text p {
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
-
+/* projects  */
 #projects {
     width: 100%;
     display: flex;
@@ -225,7 +223,6 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    padding-top: 100px;
     padding-bottom: 30px;
     color: black;
 
@@ -243,14 +240,14 @@
 }
 
 .project_heading h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
     font-weight: bold;
     word-break: 10px;
 }
 
 .project_heading p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #dc2f02;
     font-weight: bold;
 }
@@ -258,7 +255,7 @@
 .project_heading div span {
     content: " ";
     width: 40px;
-    height: 5px;
+    height: 3px;
     background: black;
 }
 
@@ -269,43 +266,50 @@
     align-items: center;
     padding: 50px 0px;
     color: white;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .my_projects_list {
-    width: 300px;
-    margin: 0px 20px;
-    padding: 20px;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
     border-radius: 20px;
     background: black;
-    box-shadow: 10px 10px rgb(71, 71, 71);
+    box-shadow: 5px 5px 10px 5px rgb(71, 71, 71);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .my_projects_list:hover {
-    box-shadow: 10px 0px 20px #dc2f02;
+    box-shadow: 5px 5px 10px 5px #dc2f02;
 
 }
 
-.my_projects_list div:nth-child(2) {
+.my_projects_list div:first-child {
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
-.my_projects_list div:nth-child(3) {
-    margin-top: 20px;
-}
+.my_projects_list .btns {
+    position: relative;
+    bottom: -100px;
+    }
 
 .my_projects_list div a {
     text-decoration: none;
-    color: #dc2f02;
+    color: white;
     padding: 10px 15px;
     border-radius: 20px;
+    background: #dc2f02;
 }
 
-.my_projects_list div a:hover {
-    background: #dc2f02;
-    color: white;
-    transition: 0.5s;
+.my_projects_list:hover .btns{
+    bottom: -20px;
+    transition: .5s;
 }
 
 /* top button */
@@ -314,7 +318,7 @@
     right: 20px;
     bottom: 10px;
     background: #dc2f02;
-    font-size: 3rem;
+    font-size: 2rem;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -335,7 +339,7 @@
     width: 100%;
     display: flex;
     margin-top: 50px;
-    padding: 100px 0px;
+    padding: 50px 0px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -358,14 +362,14 @@
 }
 
 .skill_heading h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     font-weight: bold;
     word-break: 10px;
 }
 
 .skill_heading p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #dc2f02;
     font-weight: bold;
 }
@@ -373,7 +377,7 @@
 .skill_heading div span {
     content: " ";
     width: 40px;
-    height: 5px;
+    height: 3px;
     background: red;
 }
 
@@ -384,12 +388,12 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 50px;
 }
 
 .skill_list {
-    width: 300px;
-    height: 350px;
+    width: 200px;
+    height: 250px;
     color: black;
     padding: 50px;
     display: flex;
@@ -397,16 +401,16 @@
     justify-content: center;
     align-items: center;
     background: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px 5px #ffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px #ffff;
 
 }
 .skill_list p{
-    font-size: 30px;
+    font-size: 20px;
 }
 .skill_list .p_my_skill{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     margin-top: 30px;
     background-size: cover;
     background-position: center;
@@ -449,14 +453,14 @@
 }
 
 .contact_heading h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
     font-weight: bold;
     word-break: 10px;
 }
 
 .contact_heading p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #dc2f02;
     font-weight: bold;
 }
@@ -464,7 +468,7 @@
 .contact_heading div span {
     content: " ";
     width: 40px;
-    height: 5px;
+    height: 3px;
     background: black;
 }
 
@@ -516,8 +520,8 @@
     display: none;
 }
 #mobileMenu i{
-  font-size: 30px;
-  padding: 20px;
+  font-size: 20px;
+  padding: 10px;
   background: white;
 }
 
@@ -527,30 +531,39 @@
         display: flex;
         justify-content: space-between;
         background: white;
-        padding: 0px 10px;
+        padding: 0px 20px;
 
     }
 
     #logo {
         font-size: 1.5rem;
         color: black;
-        padding: 5px 0px;
     }
     #mobileMenu{
         display: block;
     }
     #heading #menu {
+        width: 150px;
         flex-direction: column;
         position: absolute;
         z-index: 9999;
         background: white;
         right: 0;
-        margin-top: 200px;
+        margin-top: 190px;
         display: none;
         }
-    #heading ul a {
+        #heading ul{
+            width: 100%;
+        }
+        #heading ul li{
+            width: 100%;
+            padding: 10px;
+        }
+    #heading ul li a {
         color: black;
         font-size: 1rem;
+       
+
     }
 
     #heading ul li:hover {
@@ -602,7 +615,7 @@
 
     /* about */
     .about-1 h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .about-2 {
@@ -677,7 +690,7 @@
     }
 
     .project_heading h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
 
     }
 
@@ -691,7 +704,10 @@
         width: 20px;
         height: 3px;
     }
-
+    .my_projects_list .btns {
+        position: relative;
+        bottom: -20px;
+        }
     .my_projects {
         padding-top: 10px;
     }
@@ -737,11 +753,11 @@
     padding: 50px 0px;
 }
 .skill_heading h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
    }
 
 .skill_heading p {
-    font-size: 1.5rem;
+    font-size: 1rem;
    }
 .my_skills {
     width: 100%;
@@ -761,7 +777,7 @@
     
     /* contact */
     .contact_heading h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .contact_heading p {

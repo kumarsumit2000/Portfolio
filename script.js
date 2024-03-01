@@ -25,12 +25,16 @@ year.innerText = d.getFullYear();
 
 // mobile menu 
 let menu = document.querySelector("#menu");
-let mobileMenu = document.querySelector("#mobileMenu").addEventListener("click",() =>{
+let mobileMenu = document.querySelector("#mobileMenu");
+mobileMenu.addEventListener("click",() =>{
     if(menu.style.display == "block"){
     menu.style.display = "none"
+    mobileMenu.innerHTML = `<i class="fa-solid fa-bars"></i>`
     }
     else{
         menu.style.display = "block"
+        mobileMenu.innerHTML = `<i class="fa-solid fa-x"></i>`
+
     }
 })
 
